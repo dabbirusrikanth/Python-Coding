@@ -1,0 +1,11 @@
+# Question : Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don’t know what a divisor is, it is a number that divides evenly into another number. For example, 2 is a divisor of 24 because 24 / 2 has no remainder.)
+# My Solution :
+
+number = int(input("Please type your number :"))
+listRange = list(range(1, number+1))
+divisorList = []
+for natural_number in listRange:
+    if number % natural_number == 0:
+        divisorList.append(natural_number)
+        
+print (divisorList)
